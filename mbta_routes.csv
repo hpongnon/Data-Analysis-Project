@@ -1,0 +1,9 @@
+id,type,attributes.color,attributes.description,attributes.direction_destinations,attributes.direction_names,attributes.fare_class,attributes.listed_route,attributes.long_name,attributes.short_name,attributes.sort_order,attributes.text_color,attributes.type,links.self,relationships.agency.data.id,relationships.agency.data.type,relationships.line.data.id,relationships.line.data.type
+Red,route,DA291C,Rapid Transit,"['Ashmont/Braintree', 'Alewife']","['South', 'North']",Rapid Transit,True,Red Line,,10010,FFFFFF,1,/routes/Red,1,agency,line-Red,line
+Mattapan,route,DA291C,Rapid Transit,"['Mattapan', 'Ashmont']","['Outbound', 'Inbound']",Rapid Transit,True,Mattapan Line,,10011,FFFFFF,0,/routes/Mattapan,1,agency,line-Mattapan,line
+Orange,route,ED8B00,Rapid Transit,"['Forest Hills', 'Oak Grove']","['South', 'North']",Rapid Transit,True,Orange Line,,10020,FFFFFF,1,/routes/Orange,1,agency,line-Orange,line
+Green-B,route,00843D,Rapid Transit,"['Boston College', 'Government Center']","['West', 'East']",Rapid Transit,True,Green Line B,B,10032,FFFFFF,0,/routes/Green-B,1,agency,line-Green,line
+Green-C,route,00843D,Rapid Transit,"['Cleveland Circle', 'Government Center']","['West', 'East']",Rapid Transit,True,Green Line C,C,10033,FFFFFF,0,/routes/Green-C,1,agency,line-Green,line
+Green-D,route,00843D,Rapid Transit,"['Riverside', 'Union Square']","['West', 'East']",Rapid Transit,True,Green Line D,D,10034,FFFFFF,0,/routes/Green-D,1,agency,line-Green,line
+Green-E,route,00843D,Rapid Transit,"['Heath Street', 'Medford/Tufts']","['West', 'East']",Rapid Transit,True,Green Line E,E,10035,FFFFFF,0,/routes/Green-E,1,agency,line-Green,line
+Blue,route,003DA5,Rapid Transit,"['Bowdoin', 'Wonderland']","['West', 'East']",Rapid Transit,True,Blue Line,,10040,FFFFFF,1,/routes/Blue,1,agency,line-Blue,line

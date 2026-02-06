@@ -1,0 +1,5 @@
+ - Set up SQL Server storage
+    - Docker? Do more research
+
+- API connection
+    - Understand endpoints better
