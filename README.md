@@ -1,4 +1,4 @@
-Structure of the Killer Readme Page
+<!-- Structure of the Killer Readme Page
 The readme page should lead with impact and serve as an overview for busy hiring managers. Use this layout, which is credited with securing multiple six-figure data analyst roles:
 
 Section Required Content and Purpose
@@ -9,4 +9,4 @@ Section Required Content and Purpose
 4. Methodology Briefly discuss the analysis type used (e.g., funnel analysis, statistical analysis) and why those methods were chosen.
 5. Specific Skills List the tools (SQL, PowerBI, Python) and, critically, the specific skills used within those tools (e.g., CTEs, window functions) to hit relevant buzzwords.
 6. Results and Business Recommendations Summarize what you learned and, most importantly, what you recommend for the business. Focus on what business stakeholders care about.
-7. Next Steps Discuss what you would work on next, what different things you would try, or address any limitations. This shows long-term, holistic thinking.
+7. Next Steps Discuss what you would work on next, what different things you would try, or address any limitations. This shows long-term, holistic thinking. -->
