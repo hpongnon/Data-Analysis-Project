@@ -3,3 +3,5 @@
 
 - API connection
     - Understand endpoints better
+
+- Clean data df (change column names, change values from lists to regular expressions, fill missing values)
