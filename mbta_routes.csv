@@ -1,9 +1,178 @@
-id,type,attributes.color,attributes.description,attributes.direction_destinations,attributes.direction_names,attributes.fare_class,attributes.listed_route,attributes.long_name,attributes.short_name,attributes.sort_order,attributes.text_color,attributes.type,links.self,relationships.agency.data.id,relationships.agency.data.type,relationships.line.data.id,relationships.line.data.type
-Red,route,DA291C,Rapid Transit,"['Ashmont/Braintree', 'Alewife']","['South', 'North']",Rapid Transit,True,Red Line,,10010,FFFFFF,1,/routes/Red,1,agency,line-Red,line
-Mattapan,route,DA291C,Rapid Transit,"['Mattapan', 'Ashmont']","['Outbound', 'Inbound']",Rapid Transit,True,Mattapan Line,,10011,FFFFFF,0,/routes/Mattapan,1,agency,line-Mattapan,line
-Orange,route,ED8B00,Rapid Transit,"['Forest Hills', 'Oak Grove']","['South', 'North']",Rapid Transit,True,Orange Line,,10020,FFFFFF,1,/routes/Orange,1,agency,line-Orange,line
-Green-B,route,00843D,Rapid Transit,"['Boston College', 'Government Center']","['West', 'East']",Rapid Transit,True,Green Line B,B,10032,FFFFFF,0,/routes/Green-B,1,agency,line-Green,line
-Green-C,route,00843D,Rapid Transit,"['Cleveland Circle', 'Government Center']","['West', 'East']",Rapid Transit,True,Green Line C,C,10033,FFFFFF,0,/routes/Green-C,1,agency,line-Green,line
-Green-D,route,00843D,Rapid Transit,"['Riverside', 'Union Square']","['West', 'East']",Rapid Transit,True,Green Line D,D,10034,FFFFFF,0,/routes/Green-D,1,agency,line-Green,line
-Green-E,route,00843D,Rapid Transit,"['Heath Street', 'Medford/Tufts']","['West', 'East']",Rapid Transit,True,Green Line E,E,10035,FFFFFF,0,/routes/Green-E,1,agency,line-Green,line
-Blue,route,003DA5,Rapid Transit,"['Bowdoin', 'Wonderland']","['West', 'East']",Rapid Transit,True,Blue Line,,10040,FFFFFF,1,/routes/Blue,1,agency,line-Blue,line
+id,line_id,route_long_name,route_short_name,start_destination,start_direction,end_destination,end_direction,route_description,route_fare_class,route_link,route_sort_order,route_color
+Red,line-Red,Red Line,EMPTY,Ashmont/Braintree,South,Alewife,North,Rapid Transit,Rapid Transit,/routes/Red,10010,DA291C
+Mattapan,line-Mattapan,Mattapan Line,EMPTY,Mattapan,Outbound,Ashmont,Inbound,Rapid Transit,Rapid Transit,/routes/Mattapan,10011,DA291C
+Orange,line-Orange,Orange Line,EMPTY,Forest Hills,South,Oak Grove,North,Rapid Transit,Rapid Transit,/routes/Orange,10020,ED8B00
+Green-B,line-Green,Green Line B,B,Boston College,West,Government Center,East,Rapid Transit,Rapid Transit,/routes/Green-B,10032,00843D
+Green-C,line-Green,Green Line C,C,Cleveland Circle,West,Government Center,East,Rapid Transit,Rapid Transit,/routes/Green-C,10033,00843D
+Green-D,line-Green,Green Line D,D,Riverside,West,Union Square,East,Rapid Transit,Rapid Transit,/routes/Green-D,10034,00843D
+Green-E,line-Green,Green Line E,E,Heath Street,West,Medford/Tufts,East,Rapid Transit,Rapid Transit,/routes/Green-E,10035,00843D
+Blue,line-Blue,Blue Line,EMPTY,Bowdoin,West,Wonderland,East,Rapid Transit,Rapid Transit,/routes/Blue,10040,003DA5
+741,line-SLWaterfront,Logan Airport Terminals - South Station,SL1,Logan Airport Terminals,Outbound,South Station,Inbound,Frequent Bus,Rapid Transit,/routes/741,10051,7C878E
+742,line-SLWaterfront,Design Center - South Station,SL2,Design Center,Outbound,South Station,Inbound,Frequent Bus,Rapid Transit,/routes/742,10052,7C878E
+743,line-SLWaterfront,Chelsea Station - South Station,SL3,Chelsea Station,Outbound,South Station,Inbound,Frequent Bus,Rapid Transit,/routes/743,10053,7C878E
+751,line-SLWashington,Nubian Station - South Station,SL4,Nubian Station,Outbound,South Station,Inbound,Frequent Bus,Local Bus,/routes/751,10055,7C878E
+749,line-SLWashington,Nubian Station - Temple Place,SL5,Nubian Station,Outbound,Temple Place,Inbound,Frequent Bus,Local Bus,/routes/749,10056,7C878E
+746,line-SLWaterfront,Silver Line Way - South Station,SLW,Silver Line Way,Outbound,South Station,Inbound,Frequent Bus,Rapid Transit,/routes/746,10057,7C878E
+CR-Fairmount,line-Fairmount,Fairmount Line,EMPTY,Fairmount,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Fairmount,20001,80276C
+CR-NewBedford,line-NewBedford,Fall River/New Bedford Line,EMPTY,Fall River or New Bedford,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-NewBedford,20002,80276C
+CR-Fitchburg,line-Fitchburg,Fitchburg Line,EMPTY,Wachusett,Outbound,North Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Fitchburg,20003,80276C
+CR-Worcester,line-Worcester,Framingham/Worcester Line,EMPTY,Worcester,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Worcester,20004,80276C
+CR-Franklin,line-Franklin,Franklin/Foxboro Line,EMPTY,Forge Park/495 or Foxboro,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Franklin,20005,80276C
+CR-Greenbush,line-Greenbush,Greenbush Line,EMPTY,Greenbush,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Greenbush,20006,80276C
+CR-Haverhill,line-Haverhill,Haverhill Line,EMPTY,Haverhill,Outbound,North Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Haverhill,20007,80276C
+CR-Kingston,line-Kingston,Kingston Line,EMPTY,Kingston,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Kingston,20008,80276C
+CR-Lowell,line-Lowell,Lowell Line,EMPTY,Lowell,Outbound,North Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Lowell,20009,80276C
+CR-Needham,line-Needham,Needham Line,EMPTY,Needham Heights,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Needham,20011,80276C
+CR-Newburyport,line-Newburyport,Newburyport/Rockport Line,EMPTY,Newburyport or Rockport,Outbound,North Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Newburyport,20012,80276C
+CR-Providence,line-Providence,Providence/Stoughton Line,EMPTY,Stoughton or Wickford Junction,Outbound,South Station,Inbound,Regional Rail,Commuter Rail,/routes/CR-Providence,20013,80276C
+CR-Foxboro,line-Foxboro,Foxboro Event Service,EMPTY,Foxboro or Providence,Outbound,South Station or Foxboro,Inbound,Regional Rail,Special,/routes/CR-Foxboro,20014,80276C
+Boat-F4,line-Boat-F4,Charlestown Ferry,EMPTY,Charlestown,Outbound,Long Wharf,Inbound,Ferry,Ferry,/routes/Boat-F4,30001,008EAA
+Boat-F1,line-Boat-F1,Hingham/Hull Ferry,EMPTY,Hingham or Hull,Outbound,Long Wharf or Rowes Wharf,Inbound,Ferry,Ferry,/routes/Boat-F1,30002,008EAA
+Boat-EastBoston,line-Boat-EastBoston,East Boston Ferry,EMPTY,Lewis Mall Wharf,Outbound,Long Wharf,Inbound,Ferry,Ferry,/routes/Boat-EastBoston,30005,008EAA
+Boat-Lynn,line-Boat-Lynn,Lynn Ferry,EMPTY,Blossom Street Pier,Outbound,Long Wharf,Inbound,Ferry,Ferry,/routes/Boat-Lynn,30007,008EAA
+Boat-F6,line-Boat-F6,Winthrop Ferry,EMPTY,Winthrop,Outbound,Winthrop,Inbound,Ferry,Ferry,/routes/Boat-F6,30008,008EAA
+Boat-F7,line-Boat-F7,Quincy Ferry,EMPTY,Quincy,Outbound,Quincy,Inbound,Ferry,Ferry,/routes/Boat-F7,30009,008EAA
+747,line-747,Sullivan Square Station - Ruggles Station,CT2,Sullivan Square Station,Outbound,Ruggles Station,Inbound,Local Bus,Local Bus,/routes/747,40020,FFC72C
+708,line-171708,Beth Israel Deaconess Hospital - Andrew Station,CT3,Beth Israel Deaconess Hospital,Outbound,Andrew Station,Inbound,Local Bus,Local Bus,/routes/708,40030,FFC72C
+1,line-1,Harvard Square - Nubian Station,1,Harvard Square,Outbound,Nubian Station,Inbound,Frequent Bus,Local Bus,/routes/1,50010,FFC72C
+4,line-4,North Station - Design Center,4,North Station,Outbound,Design Center,Inbound,Commuter Bus,Local Bus,/routes/4,50040,FFC72C
+7,line-7,City Point - Otis Street & Summer Street,7,City Point,Outbound,Otis Street & Summer Street,Inbound,Local Bus,Local Bus,/routes/7,50070,FFC72C
+8,line-8,Harbor Point - Kenmore Station,8,Harbor Point,Outbound,Kenmore Station,Inbound,Local Bus,Local Bus,/routes/8,50080,FFC72C
+9,line-9,City Point - Copley Square,9,City Point,Outbound,Copley Square,Inbound,Local Bus,Local Bus,/routes/9,50090,FFC72C
+10,line-10,City Point - Arlington Station,10,City Point,Outbound,Arlington Station,Inbound,Local Bus,Local Bus,/routes/10,50100,FFC72C
+11,line-11,City Point - Chauncy Street & Summer Street,11,City Point,Outbound,Chauncy Street & Summer Street,Inbound,Local Bus,Local Bus,/routes/11,50110,FFC72C
+14,line-14,Roslindale Square - Heath Street,14,Roslindale Square,Outbound,Heath Street,Inbound,Local Bus,Local Bus,/routes/14,50140,FFC72C
+15,line-15,Fields Corner Station - Ruggles Station,15,Fields Corner Station,Outbound,Ruggles Station,Inbound,Frequent Bus,Local Bus,/routes/15,50150,FFC72C
+16,line-16,Forest Hills Station - Andrew Station or Harbor Point,16,Forest Hills Station,Outbound,Andrew Station or Harbor Point,Inbound,Local Bus,Local Bus,/routes/16,50160,FFC72C
+17,line-1719,Fields Corner Station - Andrew Station,17,Fields Corner Station,Outbound,Andrew Station,Inbound,Local Bus,Local Bus,/routes/17,50170,FFC72C
+18,line-18,Ashmont Station - Andrew Station,18,Ashmont Station,Outbound,Andrew Station,Inbound,Coverage Bus,Local Bus,/routes/18,50180,FFC72C
+19,line-1719,Fields Corner Station - Kenmore or Ruggles Station,19,Fields Corner Station,Outbound,Kenmore or Ruggles Station,Inbound,Local Bus,Local Bus,/routes/19,50190,FFC72C
+21,line-21,Ashmont Station - Forest Hills Station,21,Ashmont Station,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/21,50210,FFC72C
+22,line-22,Ashmont Station - Ruggles Station via Talbot Ave,22,Ashmont Station,Outbound,Ruggles Station,Inbound,Frequent Bus,Local Bus,/routes/22,50220,FFC72C
+23,line-23,Ashmont Station - Ruggles Station via Washington Street,23,Ashmont Station,Outbound,Ruggles Station,Inbound,Frequent Bus,Free,/routes/23,50230,FFC72C
+24,line-242733,Wakefield Avenue & Truman Parkway - Ashmont Station,24,Wakefield Avenue & Truman Parkway,Outbound,Ashmont Station,Inbound,Local Bus,Local Bus,/routes/24,50240,FFC72C
+26,line-26,Ashmont Station - Norfolk Street Loop,26,Ashmont Station,Outbound,Norfolk Street Loop,Inbound,Local Bus,Local Bus,/routes/26,50260,FFC72C
+28,line-28,Mattapan Station - Ruggles Station,28,Mattapan Station,Outbound,Ruggles Station,Inbound,Frequent Bus,Free,/routes/28,50280,FFC72C
+29,line-29,Mattapan Station - Jackson Square Station,29,Mattapan Station,Outbound,Jackson Square Station,Inbound,Local Bus,Free,/routes/29,50290,FFC72C
+30,line-30,Mattapan Station - Forest Hills Station via Cummins Highway and Roslindale Square,30,Mattapan Station,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/30,50300,FFC72C
+31,line-31,Mattapan Station - Forest Hills Station via Morton Street,31,Mattapan Station,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/31,50310,FFC72C
+32,line-32,Wolcott or Cleary Square - Forest Hills Station,32,Wolcott or Cleary Square,Outbound,Forest Hills Station,Inbound,Frequent Bus,Local Bus,/routes/32,50320,FFC72C
+33,line-242733,River Street & Milton Street - Mattapan Station,33,River Street & Milton Street,Outbound,Mattapan Station,Inbound,Local Bus,Local Bus,/routes/33,50330,FFC72C
+34,line-3434E,Dedham Square - Forest Hills Station,34,Dedham Square,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/34,50340,FFC72C
+34E,line-3434E,Walpole Center - Forest Hills Station,34E,Walpole Center,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/34E,50341,FFC72C
+35,line-35,Dedham Mall or Stimson Street - Forest Hills Station,35,Dedham Mall or Stimson Street,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/35,50350,FFC72C
+36,line-36,Millennium Park or VA Hospital - Forest Hills Station,36,Millennium Park or VA Hospital,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/36,50360,FFC72C
+37,line-37,Baker Street & Vermont Street - Forest Hills Station,37,Baker Street & Vermont Street,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/37,50370,FFC72C
+38,line-38,Wren Street - Forest Hills Station,38,Wren Street,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/38,50380,FFC72C
+39,line-39,Forest Hills Station - Back Bay Station,39,Forest Hills Station,Outbound,Back Bay Station,Inbound,Frequent Bus,Local Bus,/routes/39,50390,FFC72C
+40,line-4050,Georgetowne - Forest Hills Station,40,Georgetowne,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/40,50400,FFC72C
+41,line-41,Centre Street & Eliot Street - JFK/UMass Station,41,Centre Street & Eliot Street,Outbound,JFK/UMass Station,Inbound,Local Bus,Local Bus,/routes/41,50410,FFC72C
+42,line-42,Forest Hills Station - Nubian Station,42,Forest Hills Station,Outbound,Nubian Station,Inbound,Local Bus,Local Bus,/routes/42,50420,FFC72C
+43,line-43,Ruggles Station - Park Street Station,43,Ruggles Station,Outbound,Park Street Station,Inbound,Local Bus,Local Bus,/routes/43,50430,FFC72C
+44,line-44,Jackson Square Station - Ruggles Station,44,Jackson Square Station,Outbound,Ruggles Station,Inbound,Local Bus,Local Bus,/routes/44,50440,FFC72C
+45,line-45,Franklin Park - Ruggles Station,45,Franklin Park,Outbound,Ruggles Station,Inbound,Local Bus,Local Bus,/routes/45,50450,FFC72C
+47,line-47,"Central Square, Cambridge - Broadway Station",47,"Central Square, Cambridge",Outbound,Broadway Station,Inbound,Local Bus,Local Bus,/routes/47,50470,FFC72C
+50,line-4050,Cleary Square - Forest Hills Station,50,Cleary Square,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/50,50500,FFC72C
+51,line-51,Reservoir Station - Forest Hills Station,51,Reservoir Station,Outbound,Forest Hills Station,Inbound,Local Bus,Local Bus,/routes/51,50510,FFC72C
+52,line-5259,Dedham Mall - Watertown Yard,52,Dedham Mall,Outbound,Watertown Yard,Inbound,Local Bus,Local Bus,/routes/52,50520,FFC72C
+55,line-55,West Fenway - Arlington Station,55,West Fenway,Outbound,Arlington Station,Inbound,Coverage Bus,Local Bus,/routes/55,50550,FFC72C
+57,line-5757A,Watertown Yard - Kenmore Station,57,Watertown Yard,Outbound,Kenmore Station,Inbound,Frequent Bus,Local Bus,/routes/57,50570,FFC72C
+59,line-5259,Needham Junction - Watertown Square,59,Needham Junction,Outbound,Watertown Square,Inbound,Local Bus,Local Bus,/routes/59,50590,FFC72C
+60,line-6065,Chestnut Hill - Kenmore Station,60,Chestnut Hill,Outbound,Kenmore Station,Inbound,Local Bus,Local Bus,/routes/60,50600,FFC72C
+61,line-6170170,North Waltham - Waltham Center,61,North Waltham,Outbound,Waltham Center,Inbound,Local Bus,Local Bus,/routes/61,50610,FFC72C
+62,line-6276,Bedford VA Hospital - Alewife Station,62,Bedford VA Hospital,Outbound,Alewife Station,Inbound,Local Bus,Local Bus,/routes/62,50620,FFC72C
+64,line-6468,Oak Square - University Park or Kendall/MIT Station,64,Oak Square,Outbound,University Park or Kendall/MIT Station,Inbound,Local Bus,Local Bus,/routes/64,50640,FFC72C
+65,line-6065,Brighton Center - Kenmore Station,65,Brighton Center,Outbound,Kenmore Station,Inbound,Local Bus,Local Bus,/routes/65,50650,FFC72C
+66,line-66,Harvard Square - Nubian Station,66,Harvard Square,Outbound,Nubian Station,Inbound,Frequent Bus,Local Bus,/routes/66,50660,FFC72C
+67,line-6779,Turkey Hill - Alewife Station,67,Turkey Hill,Outbound,Alewife Station,Inbound,Local Bus,Local Bus,/routes/67,50670,FFC72C
+68,line-6468,Harvard Square - Kendall/MIT Station,68,Harvard Square,Outbound,Kendall/MIT Station,Inbound,Local Bus,Local Bus,/routes/68,50680,FFC72C
+69,line-69,Harvard Square - Lechmere Station,69,Harvard Square,Outbound,Lechmere Station,Inbound,Local Bus,Local Bus,/routes/69,50690,FFC72C
+70,line-6170170,Market Place Drive or Waltham Center - University Park,70,Market Place Drive or Waltham Center,Outbound,University Park,Inbound,Local Bus,Local Bus,/routes/70,50700,FFC72C
+71,line-71,Watertown Square - Harvard Station,71,Watertown Square,Outbound,Harvard Station,Inbound,Frequent Bus,Local Bus,/routes/71,50710,FFC72C
+73,line-73,Waverley Square - Harvard Station,73,Waverley Square,Outbound,Harvard Station,Inbound,Frequent Bus,Local Bus,/routes/73,50730,FFC72C
+74,line-727475,Belmont Center - Harvard via Concord Avenue,74,Belmont Center,Outbound,Harvard,Inbound,Local Bus,Local Bus,/routes/74,50740,FFC72C
+75,line-727475,Belmont Center - Harvard via Huron Avenue,75,Belmont Center,Outbound,Harvard,Inbound,Local Bus,Local Bus,/routes/75,50750,FFC72C
+76,line-6276,Lincoln Lab - Alewife Station,76,Lincoln Lab,Outbound,Alewife Station,Inbound,Local Bus,Local Bus,/routes/76,50760,FFC72C
+77,line-77,Arlington Heights - Harvard Station,77,Arlington Heights,Outbound,Harvard Station,Inbound,Frequent Bus,Local Bus,/routes/77,50770,FFC72C
+78,line-7884,Arlmont Village - Harvard Station,78,Arlmont Village,Outbound,Harvard Station,Inbound,Local Bus,Local Bus,/routes/78,50780,FFC72C
+80,line-80,Arlington Center - Lechmere Station,80,Arlington Center,Outbound,Lechmere Station,Inbound,Local Bus,Local Bus,/routes/80,50800,FFC72C
+83,line-83,"Rindge Avenue - Central Square, Cambridge",83,Rindge Avenue,Outbound,"Central Square, Cambridge",Inbound,Local Bus,Local Bus,/routes/83,50830,FFC72C
+85,line-85,Spring Hill - Kendall/MIT Station,85,Spring Hill,Outbound,Kendall/MIT Station,Inbound,Local Bus,Local Bus,/routes/85,50850,FFC72C
+86,line-86,Harvard Square - Reservoir Station,86,Harvard Square,Outbound,Reservoir Station,Inbound,Local Bus,Local Bus,/routes/86,50860,FFC72C
+87,line-87,Clarendon Hill or Arlington Center - Lechmere Station,87,Clarendon Hill or Arlington Center,Outbound,Lechmere Station,Inbound,Local Bus,Local Bus,/routes/87,50870,FFC72C
+88,line-88,Clarendon Hill - Lechmere Station,88,Clarendon Hill,Outbound,Lechmere Station,Inbound,Local Bus,Local Bus,/routes/88,50880,FFC72C
+89,line-89,Clarendon Hill or Davis Station - Sullivan Square Station,89,Clarendon Hill or Davis Station,Outbound,Sullivan Square Station,Inbound,Local Bus,Local Bus,/routes/89,50890,FFC72C
+90,line-90,Davis Station - Assembly Row,90,Davis Station,Outbound,Assembly Row,Inbound,Local Bus,Local Bus,/routes/90,50900,FFC72C
+91,line-91,"Sullivan Square Station - Central Square, Cambridge",91,Sullivan Square Station,Outbound,"Central Square, Cambridge",Inbound,Local Bus,Local Bus,/routes/91,50910,FFC72C
+92,line-92,Sullivan Square Station - Downtown via Main Street,92,Sullivan Square Station,Outbound,Downtown,Inbound,Local Bus,Local Bus,/routes/92,50920,FFC72C
+93,line-93,Sullivan Square Station - Downtown via Bunker Hill Street,93,Sullivan Square Station,Outbound,Downtown,Inbound,Local Bus,Local Bus,/routes/93,50930,FFC72C
+94,line-94,Medford Square - Davis Station,94,Medford Square,Outbound,Davis Station,Inbound,Local Bus,Local Bus,/routes/94,50940,FFC72C
+95,line-95,West Medford or Arlington Center - Sullivan Square Station,95,West Medford or Arlington Center,Outbound,Sullivan Square Station,Inbound,Local Bus,Local Bus,/routes/95,50950,FFC72C
+96,line-96,Medford Square - Harvard Station,96,Medford Square,Outbound,Harvard Station,Inbound,Local Bus,Local Bus,/routes/96,50960,FFC72C
+97,line-97,Malden Center Station - Wellington Station,97,Malden Center Station,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/97,50970,FFC72C
+99,line-99,Woodland Road - Wellington Station,99,Woodland Road,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/99,50990,FFC72C
+100,line-100,Elm Street - Wellington Station,100,Elm Street,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/100,51000,FFC72C
+101,line-101,Malden Center Station - Sullivan Square Station via Winter Hill,101,Malden Center Station,Outbound,Sullivan Square Station,Inbound,Local Bus,Local Bus,/routes/101,51010,FFC72C
+104,line-104,Malden Center Station - Airport Station,104,Malden Center Station,Outbound,Airport Station,Inbound,Frequent Bus,Local Bus,/routes/104,51040,FFC72C
+105,line-105,Malden Center Station - Sullivan Square Station via Newland Street Housing,105,Malden Center Station,Outbound,Sullivan Square Station,Inbound,Local Bus,Local Bus,/routes/105,51050,FFC72C
+106,line-106,Lebanon Loop - Wellington Station,106,Lebanon Loop,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/106,51060,FFC72C
+108,line-108,Linden Square - Wellington Station,108,Linden Square,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/108,51080,FFC72C
+109,line-109,Linden Square - Harvard Square via Sullivan,109,Linden Square,Outbound,Harvard Square,Inbound,Frequent Bus,Local Bus,/routes/109,51090,FFC72C
+110,line-110,Wonderland Station - Wellington Station,110,Wonderland Station,Outbound,Wellington Station,Inbound,Frequent Bus,Local Bus,/routes/110,51100,FFC72C
+111,line-111,Woodlawn - Haymarket Station,111,Woodlawn,Outbound,Haymarket Station,Inbound,Frequent Bus,Local Bus,/routes/111,51110,FFC72C
+112,line-112,Wellington Station - Wood Island Station,112,Wellington Station,Outbound,Wood Island Station,Inbound,Local Bus,Local Bus,/routes/112,51120,FFC72C
+114,line-114116117,Market Basket - Maverick Station,114,Market Basket,Outbound,Maverick Station,Inbound,Coverage Bus,Local Bus,/routes/114,51140,FFC72C
+116,line-114116117,Wonderland Station - Maverick Station,116,Wonderland Station,Outbound,Maverick Station,Inbound,Frequent Bus,Local Bus,/routes/116,51160,FFC72C
+119,line-119,Northgate Shopping Center - Beachmont Station,119,Northgate Shopping Center,Outbound,Beachmont Station,Inbound,Local Bus,Local Bus,/routes/119,51190,FFC72C
+120,line-120121,Orient Heights Station - Jeffries Point,120,Orient Heights Station,Outbound,Jeffries Point,Inbound,Local Bus,Local Bus,/routes/120,51200,FFC72C
+121,line-120121,Wood Island Station - Maverick Station,121,Wood Island Station,Outbound,Maverick Station,Inbound,Commuter Bus,Local Bus,/routes/121,51210,FFC72C
+131,line-131132,Melrose Highlands - Malden Center Station,131,Melrose Highlands,Outbound,Malden Center Station,Inbound,Commuter Bus,Local Bus,/routes/131,51310,FFC72C
+132,line-131132,Redstone Shopping Center - Malden Center Station,132,Redstone Shopping Center,Outbound,Malden Center Station,Inbound,Local Bus,Local Bus,/routes/132,51320,FFC72C
+134,line-134,North Woburn - Wellington Station,134,North Woburn,Outbound,Wellington Station,Inbound,Local Bus,Local Bus,/routes/134,51340,FFC72C
+137,line-136137,Reading Depot - Malden Center Station,137,Reading Depot,Outbound,Malden Center Station,Inbound,Local Bus,Local Bus,/routes/137,51370,FFC72C
+171,line-171708,Logan Airport Terminals - Nubian Station,171,Logan Airport Terminals,Outbound,Nubian Station,Inbound,Supplemental Bus,Local Bus,/routes/171,51710,FFC72C
+201,line-201202,Fields Corner Loop via Neponset Ave,201,Fields Corner Loop,Outbound,Fields Corner Loop,Inbound,Local Bus,Local Bus,/routes/201,52010,FFC72C
+202,line-201202,Fields Corner Loop via Adams Street,202,Fields Corner Loop,Outbound,Fields Corner Loop,Inbound,Local Bus,Local Bus,/routes/202,52020,FFC72C
+210,line-210211212,Quincy Center Station - Fields Corner Station,210,Quincy Center Station,Outbound,Fields Corner Station,Inbound,Local Bus,Local Bus,/routes/210,52100,FFC72C
+211,line-210211212,Quincy Center Station - Squantum,211,Quincy Center Station,Outbound,Squantum,Inbound,Local Bus,Local Bus,/routes/211,52110,FFC72C
+215,line-215,Quincy Center Station - Ashmont Station via West Quincy,215,Quincy Center Station,Outbound,Ashmont Station,Inbound,Local Bus,Local Bus,/routes/215,52150,FFC72C
+216,line-214216,Houghs Neck - Quincy Center Station via Germantown,216,Houghs Neck,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/216,52160,FFC72C
+217,line-217245,Quincy Center Station - Ashmont Station via Wollaston Station,217,Quincy Center Station,Outbound,Ashmont Station,Inbound,Commuter Bus,Local Bus,/routes/217,52170,FFC72C
+220,line-220221222,Hingham Depot - Quincy Center Station,220,Hingham Depot,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/220,52200,FFC72C
+222,line-220221222,East Weymouth - Quincy Center Station,222,East Weymouth,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/222,52220,FFC72C
+225,line-225226,Weymouth Landing - Quincy Center Station,225,Weymouth Landing,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/225,52250,FFC72C
+226,line-225226,Columbian Square - Braintree Station,226,Columbian Square,Outbound,Braintree Station,Inbound,Local Bus,Local Bus,/routes/226,52260,FFC72C
+230,line-230,Montello Station - Quincy Center Station,230,Montello Station,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/230,52300,FFC72C
+236,line-236,South Shore Plaza - Quincy Center Station,236,South Shore Plaza,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/236,52360,FFC72C
+238,line-238,Holbrook/Randolph Station - Quincy Center Station,238,Holbrook/Randolph Station,Outbound,Quincy Center Station,Inbound,Local Bus,Local Bus,/routes/238,52380,FFC72C
+240,line-240,Avon Square - Ashmont Station,240,Avon Square,Outbound,Ashmont Station,Inbound,Local Bus,Local Bus,/routes/240,52400,FFC72C
+245,line-217245,Quincy Center Station - Mattapan Station,245,Quincy Center Station,Outbound,Mattapan Station,Inbound,Local Bus,Local Bus,/routes/245,52450,FFC72C
+350,line-350351,North Burlington - Alewife Station,350,North Burlington,Outbound,Alewife Station,Inbound,Local Bus,Local Bus,/routes/350,53500,FFC72C
+351,line-350351,Bedford Woods Drive - Third Avenue,351,Bedford Woods Drive,Outbound,Third Avenue,Inbound,Commuter Bus,Local Bus,/routes/351,53510,FFC72C
+354,line-354,"North Burlington - State Street, Boston",354,North Burlington,Outbound,"State Street, Boston",Inbound,Commuter Bus,Inner Express,/routes/354,53540,FFC72C
+411,line-411430,Kennedy Drive or Jack Satter House - Malden Center Station,411,Kennedy Drive or Jack Satter House,Outbound,Malden Center Station,Inbound,Local Bus,Local Bus,/routes/411,54110,FFC72C
+424,line-424450456,Eastern Avenue & Essex Street - Wonderland Station,424,Eastern Avenue & Essex Street,Outbound,Wonderland Station,Inbound,Commuter Bus,Local Bus,/routes/424,54240,FFC72C
+426,line-426428,"Central Square, Lynn - Haymarket or Wonderland Station",426,"Central Square, Lynn",Outbound,Haymarket or Wonderland Station,Inbound,Local Bus,Inner Express,/routes/426,54260,FFC72C
+428,line-426428,Oaklandvale - Haymarket Station,428,Oaklandvale,Outbound,Haymarket Station,Inbound,Commuter Bus,Inner Express,/routes/428,54280,FFC72C
+429,line-429,"Northgate Shopping Center - Central Square, Lynn",429,Northgate Shopping Center,Outbound,"Central Square, Lynn",Inbound,Local Bus,Local Bus,/routes/429,54290,FFC72C
+430,line-411430,Saugus Center - Malden Center Station,430,Saugus Center,Outbound,Malden Center Station,Inbound,Local Bus,Local Bus,/routes/430,54300,FFC72C
+435,line-434435436,"Liberty Tree Mall - Central Square, Lynn via Peabody Square",435,Liberty Tree Mall,Outbound,"Central Square, Lynn",Inbound,Local Bus,Local Bus,/routes/435,54350,FFC72C
+436,line-434435436,"Liberty Tree Mall - Central Square, Lynn via Goodwin Circle",436,Liberty Tree Mall,Outbound,"Central Square, Lynn",Inbound,Local Bus,Local Bus,/routes/436,54360,FFC72C
+439,line-439441442,Nahant - Wonderland Station,439,Nahant,Outbound,Wonderland Station,Inbound,Coverage Bus,Local Bus,/routes/439,54390,FFC72C
+441,line-439441442,Marblehead - Wonderland Station via Paradise Road,441,Marblehead,Outbound,Wonderland Station,Inbound,Local Bus,Local Bus,/routes/441,54410,FFC72C
+442,line-439441442,Marblehead - Wonderland Station via Humphrey Street,442,Marblehead,Outbound,Wonderland Station,Inbound,Local Bus,Local Bus,/routes/442,54420,FFC72C
+450,line-424450456,Salem Depot - Wonderland or Haymarket Station,450,Salem Depot,Outbound,Wonderland or Haymarket Station,Inbound,Local Bus,Inner Express,/routes/450,54500,FFC72C
+451,line-451465,North Beverly Station - Salem Depot,451,North Beverly Station,Outbound,Salem Depot,Inbound,Commuter Bus,Local Bus,/routes/451,54510,FFC72C
+455,line-455,Salem Depot - Wonderland Station,455,Salem Depot,Outbound,Wonderland Station,Inbound,Local Bus,Local Bus,/routes/455,54550,FFC72C
+456,line-424450456,"Salem Depot - Central Square, Lynn",456,Salem Depot,Outbound,"Central Square, Lynn",Inbound,Coverage Bus,Local Bus,/routes/456,54560,FFC72C
+501,line-501503,Brighton Center - Federal Street & Franklin Street,501,Brighton Center,Outbound,Federal Street & Franklin Street,Inbound,Commuter Bus,Inner Express,/routes/501,55010,FFC72C
+504,line-502504,Watertown Yard - Federal Street & Franklin Street,504,Watertown Yard,Outbound,Federal Street & Franklin Street,Inbound,Commuter Bus,Inner Express,/routes/504,55040,FFC72C
+505,line-505553554,Waltham Center - Federal Street & Franklin Street,505,Waltham Center,Outbound,Federal Street & Franklin Street,Inbound,Commuter Bus,Inner Express,/routes/505,55050,FFC72C
+553,line-505553554,Roberts - Newton Corner,553,Roberts,Outbound,Newton Corner,Inbound,Local Bus,Local Bus,/routes/553,55530,FFC72C
+554,line-505553554,Waverley Square - Newton Corner,554,Waverley Square,Outbound,Newton Corner,Inbound,Commuter Bus,Local Bus,/routes/554,55540,FFC72C
+556,line-556558,Waltham Highlands - Newton Corner,556,Waltham Highlands,Outbound,Newton Corner,Inbound,Commuter Bus,Local Bus,/routes/556,55560,FFC72C
+558,line-556558,Riverside Station - Newton Corner,558,Riverside Station,Outbound,Newton Corner,Inbound,Commuter Bus,Local Bus,/routes/558,55580,FFC72C
+712,line-712713,Point Shirley - Orient Heights Station via Revere Street,712,Point Shirley,Outbound,Orient Heights Station,Inbound,Local Bus,Local Bus,/routes/712,57120,FFC72C
+713,line-712713,Point Shirley - Orient Heights Station via Winthrop Center,713,Point Shirley,Outbound,Orient Heights Station,Inbound,Local Bus,Local Bus,/routes/713,57130,FFC72C
+714,line-714,Hull Ferry - Hingham Depot,714,Hull Ferry,Outbound,Hingham Depot,Inbound,Coverage Bus,Local Bus,/routes/714,57140,FFC72C
+716,line-716,Canton Village Shoppes - Mattapan Station,716,Canton Village Shoppes,Outbound,Mattapan Station,Inbound,Coverage Bus,Local Bus,/routes/716,57160,FFC72C
